@@ -1,0 +1,21 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+   http://www.liquibase.org/xml/ns/dbchangelog
+   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd">
+
+    <changeSet author="ak" id="insert_data_test_1">
+
+        <sql dbms="h2">
+            INSERT INTO country (id, cost , currency_code , name, tax)
+                VALUES
+            (1, 600.00, 'GBP', 'UK', 25.00),
+            (2, 800.00, 'EUR', 'GERMANY', 20.00),
+            (3, 1200.00, 'PLN', 'POLAND', 19.00);
+        </sql>
+
+    </changeSet>
+</databaseChangeLog>

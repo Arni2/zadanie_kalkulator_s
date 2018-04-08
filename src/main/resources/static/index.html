@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<style>
+		.center {
+			margin: auto;
+			width: 50%;
+			border: 3px solid green;
+			padding: 14px;
+			margin-top: 15px;
+		}
+		.legend {
+		    padding: 5px 5px;
+			border:1px solid green;
+		}
+		.red {
+			color: red;
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-sanitize.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.12.1/angular-translate.js"></script>
+</head>
+<body>
+
+<div ng-app="salaryCalculatorApp" ng-controller="monthSalaryCalculatorCtrl">
+	<fieldset class="center">
+		<legend class="legend">{{ 'CALCULATE_VALUE_DESCRIPTION' | translate }}</legend>
+		<p>
+			{{ 'CHOOSE_COUNTRY' | translate }}:
+			<select id="currencyComboId" ng-model="selectedCountry" ng-change="changeCountry()">
+				<option value="{{country.name}}" ng-repeat="country in countries">{{country.name | translate}}</option>
+			</select>
+		</p>
+		<p>
+			{{ 'VALUE_PER_DAY_NET' | translate }}:
+			<input id="inputNetValueId" ng-model="dayNetValueInput">
+			<span id="selectedCurrencyId">{{selectedCurrency}}</span>
+		</p>
+		<p>
+			{{ 'MONTH_VALUE' | translate }}:
+			<span id="calculatedMonthValueId" ng-class="isWarning">{{monthValue}}</span>
+		</p>
+		<button id="actionCalculateMonthValueId" ng-click="calculate()">{{ 'CALCULATE_MONTH_VALUE' | translate }}</button>
+	</fieldset>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

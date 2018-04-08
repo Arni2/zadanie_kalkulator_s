@@ -39,13 +39,14 @@ mvn spring-boot:run
 ```
 mvn -Dtest=com.task.salary.suites.RegularTests test
 ```
-- internet connecting test<br/>
+- internet connecting test - connects with NBP API<br/>
 ```
 mvn -Dtest=com.task.salary.suites.NetIsUsedTests test
 ```
 
 # Gecko driver
 - download Gecko driver from https://github.com/mozilla/geckodriver/releases
+- download Firefox browser from https://www.mozilla.org/pl/firefox/new/
 # E2E Tests
 - e2e tests, need to set system variable to Gecko driver:<br/>
 ```

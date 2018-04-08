@@ -4,6 +4,13 @@ Web application for caclulating Month Salary income in given country
 # About
 - calculates month earnings after taxes and costs according to net day earnings in given country
 
+# Service
+- enter 
+```
+http://localhost:8080 
+```
+in browser to use service
+
 # Used external services
 - using NPB API to download average currency exchange to PLN
 

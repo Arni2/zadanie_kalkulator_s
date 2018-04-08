@@ -2,7 +2,7 @@
 Web application for caclulating Month Salary income in given country 
 
 # About
-- calculates month earnings after taxes and costs according to net day earnings in given country
+calculates month earnings after taxes and costs according to net day earnings in given country
 
 # Service
 in browser enter:
@@ -12,7 +12,7 @@ http://localhost:8080
 to use service
 
 # Used external services
-- using NPB API to download average currency exchange to PLN
+using NPB API to download average currency exchange to PLN
 
 # Used technologies
 - Spring Boot 2.0
@@ -28,13 +28,13 @@ to use service
 - Maven 3.5
 
 # How to run
-- run on port 8080
+run on port 8080
 ```
 mvn spring-boot:run
 ```
 
 # Database
-- application uses H2 database
+application uses H2 database
 
 # Spring Profiles
 - dev - for development
@@ -55,7 +55,7 @@ mvn -Dtest=com.task.salary.suites.NetIsUsedTests test
 - download Gecko driver from https://github.com/mozilla/geckodriver/releases
 - download Firefox browser from https://www.mozilla.org/pl/firefox/new/
 # E2E Tests
-- e2e tests, need to set system variable to Gecko driver:<br/>
+e2e tests, need to set system variable to Gecko driver:<br/>
 ```
 mvn -Dtest=com.task.salary.suites.E2ETests -Dwebdriver.gecko.driver=c:\programs\gecko\geckodriver.exe test
 ```

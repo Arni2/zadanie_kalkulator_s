@@ -12,6 +12,10 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 
+/**
+ * Calculates month income minus taxes and costs in given country
+ * according to day net income
+ */
 @Service
 public class MonthValueCalculator implements IMonthValueCalculator {
 

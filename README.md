@@ -1,7 +1,7 @@
 # zadanie_kalkulator_s
 Web application for caclulating Month Salary income in given country 
 
-# What is doing
+# About
 - calculates month earnings after taxes and costs according to net day earnings in given country
 
 # Used external services
@@ -21,7 +21,7 @@ Web application for caclulating Month Salary income in given country
 - Maven 3.5
 
 # How to run
-- run
+- run on port 8080
 ```
 mvn spring-boot:run
 ```

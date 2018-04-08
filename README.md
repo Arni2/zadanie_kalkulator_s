@@ -4,8 +4,17 @@ Web application for caclulating Month Salary income in given country
 # What is doing
 - calculates month earnings after taxes and costs according to net day earnings in given country
 
-# Used services
+# Used external services
 - using NPB API to download average currency exchange to PLN
+
+# Used technologies
+- Spring Boot 2.0
+- H2 - database
+- Liquibase - for versioning of database
+- Selenium - for E2E tests
+- JUnit - for tests
+- Gson - for JSON ORM
+- Angular 1.6.9 - frontend technology
 
 # Required
 - Java 8 SDK

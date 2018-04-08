@@ -44,7 +44,7 @@ mvn -Dtest=com.task.salary.suites.RegularTests test
 mvn -Dtest=com.task.salary.suites.NetIsUsedTests test
 ```
 
-# Gecko driver
+# Gecko driver and Firefox
 - download Gecko driver from https://github.com/mozilla/geckodriver/releases
 - download Firefox browser from https://www.mozilla.org/pl/firefox/new/
 # E2E Tests

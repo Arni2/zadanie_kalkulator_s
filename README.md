@@ -12,10 +12,18 @@ Web application for caclulating Month Salary income in given country
 - Maven 3.5
 
 # How to run
-- mvn spring-boot:run
+- run
+```
+mvn spring-boot:run
+```
 
 # Database
-- application use H2 database
+- application uses H2 database
+
+# Spring Profiles
+- dev - for development
+- test - for tests with Mocks
+- net_test - for tests with connection with NBP real API
 
 # Tests
 - regular tests:<br/>

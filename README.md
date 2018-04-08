@@ -39,11 +39,15 @@ mvn spring-boot:run
 ```
 mvn -Dtest=com.task.salary.suites.RegularTests test
 ```
-- e2e tests, need to set system variable to Gecko driver:<br/>
-```
-mvn -Dtest=com.task.salary.suites.E2ETests -Dwebdriver.gecko.driver=c:\programs\gecko\geckodriver.exe test
-```
 - internet connecting test<br/>
 ```
 mvn -Dtest=com.task.salary.suites.NetIsUsedTests test
+```
+
+# Gecko driver
+- download Gecko driver from https://github.com/mozilla/geckodriver/releases
+# E2E Tests
+- e2e tests, need to set system variable to Gecko driver:<br/>
+```
+mvn -Dtest=com.task.salary.suites.E2ETests -Dwebdriver.gecko.driver=c:\programs\gecko\geckodriver.exe test
 ```

@@ -1,11 +1,21 @@
 # zadanie_kalkulator_s
-Month salary calculator 
+Web application for caclulating Month Salary income in given country 
 
 # What is doing
-- calculates month earnings after taxes and costs according to net day earnings
+- calculates month earnings after taxes and costs according to net day earnings in given country
 
 # Used services
 - using NPB API to download average currency exchange to PLN
+
+# Required
+- Java 8 SDK
+- Maven 3.5
+
+# How to run
+- mvn spring-boot:run
+
+# Database
+- application use H2 database
 
 # Tests
 - regular tests:<br/>
